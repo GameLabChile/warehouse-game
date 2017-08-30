@@ -14,13 +14,22 @@ $('#login-button').on('click', function(e){
 });
 
 $('#btnJoin').on('click', function(e){
-		e.preventDefault();
+	e.preventDefault();
 
-		$("#fase-cuatro").removeClass("hidden")
-		$("#fase-tres").addClass("hidden")
-		$("#formLogin").addClass("hidden")
-		$(".footerGL").addClass("hidden")
-	});
+	$("#fase-cuatro").removeClass("hidden")
+	$("#fase-tres").addClass("hidden")
+	$("#formLogin").addClass("hidden")
+	$(".footerGL").addClass("hidden")
+});
+$("#btn").on('click', function(e){
+	e.preventDefault();
+
+	$("#fase-cinco").removeClass("hidden")
+	$("#fase-cuatro").addClass("hidden")
+	$("#fase-tres").addClass("hidden")
+	$("#formLogin").addClass("hidden")
+	$(".footerGL").addClass("hidden")
+})
 /*
 $(document).ready(function(){
 	$("#clicktext").click(function(){

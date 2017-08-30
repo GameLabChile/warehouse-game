@@ -363,8 +363,30 @@
 					width: 92%;
 					height: 85vh;
 					position: relative;
-					bottom: 100px;
+					bottom: 87px;
 					margin-left: 36px;
+				}
+				.btn-grupo {
+					background-color: #FFFFFF;
+					background-color: rgba(255, 255, 255, 1);
+					border-style: Solid;
+					border-color: #5BB5C8;
+					border-color: rgba(91, 181, 200, 1);
+					border-width: 1px;
+					width: 150px;
+					height: 50px;
+					border-radius: 25px;
+					-moz-border-radius: 25px;
+					-webkit-border-radius: 25px;
+					font-family: Roboto;
+					font-size: 16px;
+					color: #5BB5C8;
+					color: rgb(91, 181, 200);
+					padding-bottom: 4px;
+					transition: all 0.3s ease;
+					position: relative;
+					bottom: 320px;
+					left: 159px;
 				}
 			}
 		}

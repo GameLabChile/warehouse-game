@@ -236,3 +236,60 @@ body{
     top: 25%;
     left: 66%;
 }
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/* Index */
+.logo {
+	background-image: url(../img/logo/splash_001.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+
+	.btn-logo {
+		margin-top: 50%;
+		margin-left: 80%;
+	}
+
+	.siguiente {
+		@include btnSiguiente();
+		font-size: 1.2em;
+		left: 85%;
+		top: 92.5%;
+	}
+}
+
+
+/* Intro */
+.intro {
+	background-image: url(../img/intro/003.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 133vh;
+	max-width: 100%;
+	.dialogo {
+	    margin-top: 50%;
+	    #contenido {
+				margin: -20% 5% 3%;
+				font-weight: bold;
+				color: whitesmoke;
+				font-size: 1.8em;
+	    }
+	    .btn-intro{
+			margin-left: 36%;
+			margin-top: -9%;
+	    }
+
+		.siguiente {
+			@include btnSiguiente();
+			font-size: 2em;
+			left: 82.5%;
+			top: 145.5%;
+		}
+	}
+}
+

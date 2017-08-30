@@ -112,3 +112,36 @@ $(document).ready(function() {
 
 });
 	
+
+$('#comenzar').on('click', function(e){
+	
+	$("#fase-dos").removeClass("hidden")
+	$("#foto").addClass("hidden")
+});
+
+$('#login-button').on('click', function(e){
+	e.preventDefault();
+
+	$("#fase-tres").removeClass("hidden")
+	$("#formLogin").addClass("hidden")
+	$(".footerGL").addClass("hidden")
+});
+
+$('#btnJoin').on('click', function(e){
+	e.preventDefault();
+
+	$("#fase-cuatro").removeClass("hidden")
+	$("#fase-tres").addClass("hidden")
+	$("#formLogin").addClass("hidden")
+	$(".footerGL").addClass("hidden")
+});
+$("#btn").on('click', function(e){
+	e.preventDefault();
+
+	$("#fase-cinco").removeClass("hidden")
+	$("#fase-cuatro").addClass("hidden")
+	$("#fase-tres").addClass("hidden")
+	$("#formLogin").addClass("hidden")
+	$(".footerGL").addClass("hidden")
+})
+

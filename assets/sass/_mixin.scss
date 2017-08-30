@@ -4,3 +4,23 @@
 	position: absolute;
 	cursor: pointer;
 }
+
+@mixin btnInterfaz(){
+	position: absolute;
+	width: 40px;
+    height: 40px;
+    color: whitesmoke;
+    font-weight: bold;
+    z-index: 1;
+}
+
+@mixin lineaTransition(){
+	-webkit-transition: width 1s, background 1s;
+    	-moz-transition: width 1s, background 1s;
+    		-o-transition: width 1s, background 1s;
+    			transition: width 1s, background 1s;
+    -webkit-transition-timing-function: linear;
+    	-moz-transition-timing-function: linear;
+    		-o-transition-timing-function: linear;
+    			transition-timing-function: linear;
+}

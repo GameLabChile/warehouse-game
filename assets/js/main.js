@@ -1,3 +1,22 @@
+$(document).ready(function(){
+    setTimeout(function(){
+    	$(".globo").fadeIn(500);
+    },1000);
+
+     setTimeout(function(){
+    	$(".globo2").fadeIn(1000);
+    },2000);
+
+      setTimeout(function(){
+    	$(".globo3").fadeIn(1500);
+    },3000);
+
+       setTimeout(function(){
+    	$(".all-maribel").fadeIn(2000);
+    },4000);
+
+});
+
 $(document).ready(function() {
 	$('.dos').hide();
 	$('.tres').hide();
@@ -5,14 +24,15 @@ $(document).ready(function() {
 	$('.cinco').hide();
 	$('.seis').hide();
 	$('.siete').hide();
+	$('.btn-planta').hide();
+	$('.siguiente').hide();
 	$('.uno').click(function(e) {
 		$(this).removeClass('pulse');	
 		$('#linea1').css({
-			width: '300px',
-			background: '#428bca',
-			transform: 'rotate(20deg)'
+			width: '280px',
+			background: '#c50000',
+			transform: 'rotate(16deg)'
 		});
-		$('#linea1').css('margin-top','7%');
 		$('.dos').show();
 	});
 
@@ -20,19 +40,15 @@ $(document).ready(function() {
 		$(this).removeClass('pulse');
 		$('#linea2').css({
 			width: '270px',
-			background: '#428bca',
+			background: '#c50000',
 			transform: 'rotate(-35deg)'
 		});
 		$('#linea3').css({
 			width: '400px',
-			background: '#428bca',
+			background: '#c50000',
 			transform: 'rotate(-10deg)'
 		});
 		$('#linea1').css('height','5px');
-		$('#linea2').css('margin-top','-3%');
-		$('#linea2').css('margin-left','-1%');
-		$('#linea3').css('margin-top','1%');
-		$('#linea3').css('margin-left','2%');
 		$('.tres').show();
 		$('.cuatro').show();
 		$('.cinco').show();
@@ -41,12 +57,10 @@ $(document).ready(function() {
 	$('.tres').click(function(e) {
 		$(this).removeClass('pulse');
 		$('#linea4').css({
-			width: '80px',
-			background: '#428bca',
-			transform: 'rotate(150deg)'
+			width: '65px',
+			background: '#c50000',
+			transform: 'rotate(-30deg)'
 		});
-		$('#linea4').css('margin-top','0%');
-		$('#linea4').css('margin-left','-7%');
 		$('#linea2').css('height','5px');
 		setTimeout(function() {
 			$(".ruta-mn").fadeIn(1500);
@@ -57,12 +71,10 @@ $(document).ready(function() {
 	$('.cuatro').click(function(e) {
 		$(this).removeClass('pulse');
 		$('#linea5').css({
-			width: '72px',
-			background: '#428bca',
-			transform: 'rotate(85deg)'
+			width: '45px',
+			background: '#c50000',
+			transform: 'rotate(75deg)'
 		});
-		$('#linea5').css('margin-top','14%');
-		$('#linea5').css('margin-left','6.5%');
 		$('#linea3').css('height','5px');
 		setTimeout(function() {
 			$(".ruta-mopp").fadeIn(1500);
@@ -73,12 +85,10 @@ $(document).ready(function() {
 	$('.cinco').click(function(e) {
 		$(this).removeClass('pulse');
 		$('#linea6').css({
-			width: '72px',
-			background: '#428bca',
-			transform: 'rotate(85deg)'
+			width: '55px',
+			background: '#c50000',
+			transform: 'rotate(-118deg)'
 		});
-		$('#linea6').css('margin-top','17%');
-		$('#linea6').css('margin-left','9.5%');
 		setTimeout(function() {
 			$(".ruta-xd").fadeIn(1500);
 		},2000);
@@ -89,25 +99,38 @@ $(document).ready(function() {
 		$(this).removeClass('pulse');
 		$('#linea6').css({
 			width: '72px',
-			background: '#428bca',
+			background: '#c50000',
 			transform: 'rotate(85deg)'
 		});
-		$('#linea6').css('margin-top','17%');
-		$('#linea6').css('margin-left','9.5%');
 		setTimeout(function() {
+
 			$(".ruta-ptl").fadeIn(500);
 		},1000);
 		$('.siete').show();
 		$('#linea4').css('height','5px');
 		$('#linea5').css('height','5px');
 		$('#linea6').css('height','5px');
+
+	        $(".ruta-ptl").fadeIn(500);
+	    },1000);
+	    $('.siete').show();
+	    $('#linea4').css('height','5px');
+	    $('#linea5').css('height','5px');
+
 	});
 
 	$('.siete').click(function(e) {
 		$(this).removeClass('pulse');
 		setTimeout(function() {
+
 			$(".ruta-ds").fadeIn(500);
 		},1000);
+
+	        $(".ruta-ds").fadeIn(500);
+	    },1000);
+	    $('.btn-planta').show();
+		$('.siguiente').show();
+
 	});
 
 });

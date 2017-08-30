@@ -5797,6 +5797,7 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+
 #demo {
   background-image: url(../img/macbook.png);
   background-repeat: no-repeat;
@@ -6136,5 +6137,54 @@ button.close {
     position: relative;
     bottom: 320px;
     left: 159px; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+/* Index */
+.logo {
+  background-image: url(../img/logo/splash_001.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh; }
+  .logo .btn-logo {
+    margin-top: 50%;
+    margin-left: 80%; }
+  .logo .siguiente {
+    color: whitesmoke;
+    font-weight: bold;
+    position: absolute;
+    cursor: pointer;
+    font-size: 1.2em;
+    left: 85%;
+    top: 92.5%; }
+
+/* Intro */
+.intro {
+  background-image: url(../img/intro/003.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 133vh;
+  max-width: 100%; }
+  .intro .dialogo {
+    margin-top: 50%; }
+    .intro .dialogo #contenido {
+      margin: -20% 5% 3%;
+      font-weight: bold;
+      color: whitesmoke;
+      font-size: 1.8em; }
+    .intro .dialogo .btn-intro {
+      margin-left: 36%;
+      margin-top: -9%; }
+    .intro .dialogo .siguiente {
+      color: whitesmoke;
+      font-weight: bold;
+      position: absolute;
+      cursor: pointer;
+      font-size: 2em;
+      left: 82.5%;
+
 
 /*# sourceMappingURL=main.css.map */

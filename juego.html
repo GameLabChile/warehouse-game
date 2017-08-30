@@ -1,125 +1,162 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Warehouse Game</title>
-	<!-- Viewport -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<!-- FontAwesome -->
-	<script src="https://use.fontawesome.com/b432f04897.js"></script>
-	<!-- main.css -->
-	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
-</head>
-<body id="demo">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-offset-1 col-md-10" id="foto">
-				<img src="assets/img/principal.png" alt="">
-				<button class="buttonGl" id="comenzar">Comenzar</button>
-			</div>
-		</div>
-		<div class="row">
-			<div id="fase-dos" class="col-md-offset-1 col-md-10 hidden">
-				<div class="headerGL">
-					<div class="gamename"><b>Warehouse</b>Game</div>
-					<div class="title"></div>
-					<div class="menu"></div>
-					<div class="lang">
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+ 	<meta charset="UTF-8">
+ 	<title>Warehouse Game</title>
+ 	<!-- Viewport -->
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+ 	<!-- FontAwesome -->
+ 	<script src="https://use.fontawesome.com/b432f04897.js"></script>
+ 	<!-- main.css -->
+ 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+ </head>
+ <body id="demo">
+ 	<div class="container">
+ 		<div class="row">
+ 			<div class="col-md-offset-1 col-md-10 " id="foto">
+ 				<img src="assets/img/principal.png" alt="">
+ 				<div class="buttonGl" id="comenzar">Comenzar</div>
+ 				
+ 			</div>
+ 		</div>
+ 		<div class="row">
+ 			<div id="fase-dos" class="col-md-offset-1 col-md-10 hidden">
+ 				<div class="headerGL">
+ 					<div class="gamename"><b>Warehouse</b>Game</div>
+ 					<div class="title"></div>
+ 					<div class="menu"></div>
+ 					<div class="lang">
 
-						<div class="langs" data-val="ee">ee</div>
+ 						<div class="langs" data-val="ee">ee</div>
 
-						<div class="langs" data-val="en">en</div>
+ 						<div class="langs" data-val="en">en</div>
 
-						<div class="langs selected" data-val="es">es</div>
+ 						<div class="langs selected" data-val="es">es</div>
 
-					</div>
-					<div class="player"></div>
-					<div class="menulist">
+ 					</div>
+ 					<div class="player"></div>
+ 					<div class="menulist">
 
-					</div>
-				</div>
-				<form id="formLogin" class="box1GL">
-					<div class="GameImage"></div>
-					<input type="text" id="txtUsername" required="" class="input-text" placeholder="Usuario">
-					<input type="password" required="" id="txtPassword" class="input-text" placeholder="Contraseña">
-					<div class="GameLogo"><b>Warehouse</b>Game</div>
-					<div class="error">Usuario/Contraseña no corresponden.</div>
-					<div class="buttonGL"><input type="submit" value="Login" id="login-button"></div>
-					<div class="space1"></div>
-					<a href="/registro" class="buttonGL-link">Registrar</a>
-				</form>
-				<div class="footerGL">Copyright GameLab Education 2017. &lt;br&gt; Todos los derechos reservados.</div>
-			</div>
-		</div>
-		<div id="fase-tres" class="row hidden">
-			<div class="col-md-offset-1 col-md-10">
-				<div class="box1GLL">
-					<div class="GameImage"></div>
-					<div class="titleHome">Unirse</div>
-					<input id="txtCodigo" type="text" class="input-text" placeholder="ID del juego">
-					<div id="listPartidas" class="dropdownGLCont" data-open="0" data-value="">
-						<div class="dropdownGL">
-							<div class="dropdownGLlabel">Volver al juego</div>
-							<span class="dropdownGLarrow"></span>
-						</div>
-						<ul class="dropdownGLlist">
+ 					</div>
+ 				</div>
+ 				<form id="formLogin" class="box1GL">
+ 					<div class="GameImage"></div>
+ 					<div type="text" id="txtUsername" required="" class="input-text" placeholder="Usuario"></div>
+ 					<div type="password" required="" id="txtPassword" class="input-text" placeholder="Contraseña"></div>
+ 					<div class="GameLogo"><b>Warehouse</b>Game</div>
+ 					<div class="error">Usuario/Contraseña no corresponden.</div>
+ 					<div class="buttonGL"><input type="submit" value="Login" id="login-button" class="pulse"></div>
+ 					<div class="space1"></div>
+ 					<a href="/registro" class="buttonGL-link">Registrar</a>
+ 				</form>
+ 				<div class="footerGL">Copyright GameLab Education 2017. &lt;br&gt; Todos los derechos reservados.</div>
+ 			</div>
+ 		</div>
+ 		<div id="fase-tres" class="row hidden">
+ 			<div class="col-md-offset-1 col-md-10">
+ 				<div class="box1GLL">
+ 					<div class="GameImage"></div>
+ 					<div class="titleHome">Unirse</div>
+ 					<div id="txtCodigo" type="text" class="input-text" placeholder="ID del juego"></div>
+ 					<div id="listPartidas" class="dropdownGLCont" data-open="0" data-value="">
+ 						<div class="dropdownGL">
+ 							<div class="dropdownGLlabel">Volver al juego</div>
+ 							<span class="dropdownGLarrow"></span>
+ 						</div>
+ 						<ul class="dropdownGLlist">
 
-							<li data-val="BwGrkxLR5fLLA9Kzd">Prueba Laboratorio 2 (Tue 29 Aug 2017)</li>
+ 							<li data-val="BwGrkxLR5fLLA9Kzd">Prueba Laboratorio 2 (Tue 29 Aug 2017)</li>
 
-							<li data-val="LojL8pcHo4xNYfK6y">demo 5 (Tue 29 Aug 2017)</li>
+ 							<li data-val="LojL8pcHo4xNYfK6y">demo 5 (Tue 29 Aug 2017)</li>
 
-							<li data-val="ZXBWL9rfkuzqnJddc">DEMO (Tue 29 Aug 2017)</li>
+ 							<li data-val="ZXBWL9rfkuzqnJddc">DEMO (Tue 29 Aug 2017)</li>
 
-							<li data-val="b7cTuoHnGs3Wfjf7r">Demo laboratoria (Tue 29 Aug 2017)</li>
+ 							<li data-val="b7cTuoHnGs3Wfjf7r">Demo laboratoria (Tue 29 Aug 2017)</li>
 
-							<li data-val="hQhRbbNwu52Ld9QrX">Demo 4 (Tue 29 Aug 2017)</li>
+ 							<li data-val="hQhRbbNwu52Ld9QrX">Demo 4 (Tue 29 Aug 2017)</li>
 
-							<li data-val="pzgPyH6LAvjD5Adtw">DEMO 3 (Tue 29 Aug 2017)</li>
+ 							<li data-val="pzgPyH6LAvjD5Adtw">DEMO 3 (Tue 29 Aug 2017)</li>
 
-							<li data-val="r9uDHfM5vTcEwz2rG">DEMO 2 (Tue 29 Aug 2017)</li>
+ 							<li data-val="r9uDHfM5vTcEwz2rG">DEMO 2 (Tue 29 Aug 2017)</li>
 
-						</ul>
-					</div>
-					<div class="space2"></div>
-					<div class="error"></div>
-					<div class="buttonGL"><button type="button" id="btnJoin">Unirse</button></div>
-					<div class="space1"></div>
-					<a href="#" id="graylogout" class="buttonGL-link">Logout</a>
-				</div>
-			</div>
-		</div>
-		<div id="fase-cuatro" class="row hidden">
-			<div class="col-md-offset-1 col-md-10">
-				<img src="assets/img/cuarta-fase.png" alt="">
-				<button id="btn" class="btn-grupo">Crear nuevo equipo</button>
-			</div>
-		</div>
-		<div id="fase-cinco" class="row hidden">
-			<div class="col-md-offset-1 col-md-10">
-				<video autoplay="autoplay">
-					<source src="assets/video/trabajadores.mp4">
-				</video>
-				<button>click</button>
-			</div>
-		</div>
-		<div id="fase-seis" class="row hidden">
-			<div class="col-md-offset-1 col-md-10">
-				
-			</div>
-		</div>
-		<div id="fase-siete" class="row hidden">
-			<div class="col-md-offset-1 col-md-10">
-				<h2>pantalla video funcionamiento de TRI</h2>		
-			</div>
-		</div>
-	</div>
+ 						</ul>
+ 					</div>
+ 					<div class="space2"></div>
+ 					<div class="error"></div>
+ 					<div class="buttonGL pulse"><button type="button" id="btnJoin">Unirse</button></div>
+ 					<div class="space1"></div>
+ 					<a href="#" id="graylogout" class="buttonGL-link">Logout</a>
+ 				</div>
+ 			</div>
+ 		</div>
+ 		<div id="fase-cuatro" class="row hidden">
+ 			<div class="col-md-offset-1 col-md-10">
+ 				<div class="box3GL">
+ 					<form class="bluebox" id="formNewGroup">
+ 						<div class="bluetitle">Crear Equipo</div>
+ 						<div class="bluetruebox" type="text" id="txtNombreGrupo" required=""></div>
+ 						<div class="bluebutton"><button id="btnSubmitNuevoGrupo" class="pulse">Crear Nuevo Equipo</button></div>
+ 					</form>
+ 					<div class="row31GL">
+ 						<div class="groupsContainer">
+ 							<div id="grupo" class="dropgroupCont hidden" data-open="0">
+ 								<div class="dropgroup">
+ 									<div class="dropgrouplabel">The Best Group</div>
+ 									<span class="dropgroupNumber">1</span>
+ 								</div>
+ 								<ul class="dropgrouplist">
+ 									<li data-val="JsMnKAWtHYdHpfWYb"><div id="btnLeave" class="exitgroup"></div>valentina</li>
+ 								</ul>
+ 							</div>
+ 						</div>
+ 						<div class="row31buttons">
+ 							<div class="switch" data-on="0" data-disabled="1">
+ 								<div class="switchbutton"><div class="switchbuttonoff">off</div><div class="switchbuttonon">on</div><div class="switchcircle"></div></div>
+ 								<div class="switchlabel">Bloquear</div>
+ 							</div>
+ 							<div class="recomendacionGL2">Los jugadores no<br> no podrán cambiar de grupo</div>
+ 						</div>
+ 					</div>
+ 					<div class="row32GL">
+ 						<div class="titlesingrupo">Jugadores<br>sin grupo</div>
+ 						<ul class="singrupolist">
 
-	<!-- CDN JQuery -->		
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<!-- CDN Bootstrap JS -->	
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<!-- main.js -->
-	<script type="text/javascript" src="assets/js/main.js"></script>
-</body>
-</html>
+ 							<li id="jugador">BigBoss</li>
+
+
+ 						</ul>
+ 					</div>
+ 				</div>
+ 			</div>
+ 		</div>
+ 		<div id="fase-cinco" class="row hidden">
+ 			<div class="col-md-offset-1 col-md-10">
+ 				<video autoplay="autoplay">
+ 					<source src="assets/video/trabajadores.mp4">
+ 					</video>
+ 					<button>click</button>
+ 				</div>
+ 			</div>
+ 			<div id="fase-seis" class="row hidden">
+ 				<div class="col-md-offset-1 col-md-10">
+
+ 				</div>
+ 			</div>
+
+ 			<div id="fase-siete" class="row hidden">
+ 				<div class="col-md-offset-1 col-md-10">
+ 					<h2>pantalla video funcionamiento de TRI</h2>		
+ 				</div>
+ 			</div>
+ 		</div>
+
+ 		<!-- CDN JQuery -->		
+ 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 		<script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
+ 		<!-- CDN Bootstrap JS -->	
+ 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ 		<!-- main.js -->
+ 		<script type="text/javascript" src="assets/js/main.js"></script>
+ 	</body>
+ 	</html>
 

@@ -1,0 +1,116 @@
+
+*{
+	margin:0;
+	padding:0;
+}
+
+#reunion{
+	background-image:url(../img/reunion/reunionpizarra.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    width:100%;
+    height:120vh;
+}
+
+ .globo{
+ 	display:none;
+   img{
+   width: 18%;
+   margin-top: 0%;
+   margin-left: 372px;
+    }
+  }
+
+.globo2{
+	display:none;
+	img{
+    width:18%;
+    width: 18%;
+    margin-left: 53%;
+    margin-top: -10%;
+	}
+}
+
+.globo3{
+	display:none;
+	img{
+		width:18%;
+		margin-left: 28%;
+        margin-top: 62px;
+	}
+}
+
+ .texto{
+    p{
+       margin-top:20px;
+    }
+}
+
+    .dialog{
+    	img{
+    		width: 100%;
+            margin-top: 170px;
+    	}
+    }
+
+   .button{
+   	img{
+    width: 30%;
+    margin-left: 763px;
+    margin-top: -55px;
+   	}
+
+   	.texto2{
+   		p{
+    margin-top: -85px;
+    padding-left: 884px;
+    font-size: 40px; 
+}
+   	}
+
+   	.texto{
+   		p{
+    margin-top: -165px;
+    margin-left: 30px;
+    font-size:20px;
+   		}
+   	}
+   }
+
+.textbutton{
+	position: absolute;
+    left: 78%;
+    margin-top: -29px;
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#textglobito{
+		position: absolute;
+	    left: 56%;
+	    z-index: 1000;
+	    font-size: 19px;
+	    top: 40%;
+	    width:15%;
+}
+
+#textglobito2{
+	position: absolute;
+    top: 641%;
+    left: 32%;
+    z-index: 1004;
+    font-size: 19px;
+    width:13%;
+}
+
+#textglobito3{
+	position: relative;
+    top: -299px;
+    left: 38%;
+    font-size: 19px;
+}
+
+.all-maribel{
+	display:none;
+}

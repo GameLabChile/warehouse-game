@@ -5806,10 +5806,10 @@ button.close {
   margin-top: 100px; }
   #demo div div #foto img {
     width: 92%;
-    height: 85vh;
+    height: 90vh;
     position: relative;
-    bottom: 55px;
-    margin-left: 35px; }
+    bottom: 60px;
+    margin-left: 37px; }
   #demo div div #foto .buttonGl {
     background-color: #FFFFFF;
     background-color: white;
@@ -5838,7 +5838,7 @@ button.close {
     position: relative;
     z-index: 10;
     margin-left: 36px;
-    bottom: 54px; }
+    bottom: 76px; }
     #demo div div div .headerGL .gamename {
       float: left;
       font-family: 'Asap', sans-serif;
@@ -5984,7 +5984,7 @@ button.close {
     background: #FFFFFF;
     background: white;
     position: relative;
-    bottom: 40px;
+    bottom: 62px;
     margin: 0px auto;
     padding: 50px 61px 54px;
     width: 345px;
@@ -6113,7 +6113,7 @@ button.close {
     width: 92%;
     height: 85vh;
     position: relative;
-    bottom: 87px;
+    bottom: 71px;
     margin-left: 36px; }
   #demo div div div .btn-grupo {
     background-color: #FFFFFF;
@@ -6134,7 +6134,13 @@ button.close {
     padding-bottom: 4px;
     transition: all 0.3s ease;
     position: relative;
-    bottom: 320px;
+    bottom: 284px;
     left: 159px; }
+  #demo div div div video {
+    width: 92%;
+    height: 90vh;
+    margin-left: 37px;
+    position: relative;
+    bottom: 58px; }
 
 /*# sourceMappingURL=main.css.map */

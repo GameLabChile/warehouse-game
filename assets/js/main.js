@@ -17,6 +17,7 @@ $('#btnJoin').on('click', function(e){
 	e.preventDefault();
 
 	$("#fase-cuatro").removeClass("hidden")
+	$(".headerGL").addClass("hidden")
 	$("#fase-tres").addClass("hidden")
 	$("#formLogin").addClass("hidden")
 	$(".footerGL").addClass("hidden")
@@ -25,6 +26,7 @@ $("#btn").on('click', function(e){
 	e.preventDefault();
 
 	$("#fase-cinco").removeClass("hidden")
+	$(".headerGL").addClass("hidden")
 	$("#fase-cuatro").addClass("hidden")
 	$("#fase-tres").addClass("hidden")
 	$("#formLogin").addClass("hidden")

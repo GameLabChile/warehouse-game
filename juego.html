@@ -115,6 +115,7 @@
  								<div class="switchlabel">Bloquear</div>
  							</div>
  							<div class="recomendacionGL2">Los jugadores no<br> no podrán cambiar de grupo</div>
+ 							<button class="pulse btn-play">PLAY</button>
  						</div>
  					</div>
  					<div class="row32GL">
@@ -123,7 +124,6 @@
 
  							<li id="jugador">BigBoss</li>
 
-
  						</ul>
  					</div>
  				</div>
@@ -131,21 +131,32 @@
  		</div>
  		<div id="fase-cinco" class="row hidden">
  			<div class="col-md-offset-1 col-md-10">
- 				<video autoplay="autoplay">
- 					<source src="assets/video/trabajadores.mp4">
+ 				<video id="video-uno" autoplay="autoplay" src="assets/video/alertas.mp4">
  					</video>
- 					<button>click</button>
+ 					<button class="pulse btn-play" id="btn-play">PLAY</button>
  				</div>
  			</div>
  			<div id="fase-seis" class="row hidden">
  				<div class="col-md-offset-1 col-md-10">
-
+ 					<video id="video-dos" autoplay="autoplay" src="assets/video/trabajadores.mp4">
+ 					</video>
+					<button id="btn-play2" class="pulse btn-play btn-play2">PLAY</button>
  				</div>
  			</div>
 
  			<div id="fase-siete" class="row hidden">
  				<div class="col-md-offset-1 col-md-10">
- 					<h2>pantalla video funcionamiento de TRI</h2>		
+ 					<video id="video-tres" autoplay="autoplay" src="assets/video/fin.mp4">
+ 					</video>
+ 					<button id="btn-play3" class="pulse btn-play">Exit</button>	
+ 				</div>
+ 			</div>
+ 			<div id="fase-ocho" class="row hidden">
+ 				<div class="col-md-offset-1 col-md-10">
+ 					<div class="contenedor-logo text-center">
+ 						<img src="assets/img/logo-colored.png" alt="">
+ 						<h1>Contact us!!</h1>
+ 					</div>	
  				</div>
  			</div>
  		</div>

@@ -144,7 +144,7 @@
 }
 .planta img{
 	width: 100%;
-	height: 100vh;
+	height: 110vh;
 	margin-top: 0%;
 }
 
@@ -237,7 +237,7 @@
  .mnVerde .ruta-mn{
  	width: 35%;
     display: none;
-    margin-top: -7.5%;
+    margin-top: -9.5%;
     margin-left: 58%;
  }
 
@@ -409,3 +409,44 @@ body {
 	}
 }
 
+.btn-play{
+    background-color: #5EB2C6;
+    border-style: Solid;
+    border-color: #FFFFFF;
+    border-width: 1px;
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    padding-bottom: 4px;
+    transition: 0.5s;
+}
+
+#video-uno{
+    width: 92%;
+    height: 74vh;
+    margin-left: 37px;
+    position: relative;
+    bottom: 58px; 
+}
+
+#video-dos{
+    width: 92%;
+    height: 74vh;
+    margin-left: 37px;
+    position: relative;
+    bottom: 58px; 
+}
+
+#video-tres{
+    width: 92%;
+    height: 74vh;
+    margin-left: 37px;
+    position: relative;
+    bottom: 58px; 
+}

@@ -17,6 +17,7 @@ $(document).ready(function(){
 
 });
 
+
 $(document).ready(function() {
 	$('.dos').hide();
 	$('.tres').hide();
@@ -110,13 +111,12 @@ $(document).ready(function() {
 		$('#linea4').css('height','5px');
 		$('#linea5').css('height','5px');
 		$('#linea6').css('height','5px');
-
+		setTimeout(function() {
 	        $(".ruta-ptl").fadeIn(500);
 	    },1000);
 	    $('.siete').show();
 	    $('#linea4').css('height','5px');
 	    $('#linea5').css('height','5px');
-
 	});
 
 	$('.siete').click(function(e) {
@@ -126,15 +126,13 @@ $(document).ready(function() {
 			$(".ruta-ds").fadeIn(500);
 		},1000);
 
-	        $(".ruta-ds").fadeIn(500);
-	    },1000);
 	    $('.btn-planta').show();
 		$('.siguiente').show();
-
 	});
 
-});
 
+		
+});
 
 $('#comenzar').on('click', function(e){
 
@@ -190,7 +188,6 @@ $('#btnJoin').on('click', function(e){
 $("#btn").on('click', function(e){
 	e.preventDefault();
 
-	$("#fase-cinco").removeClass("hidden")
 	$(".headerGL").addClass("hidden")
 	$("#fase-cuatro").addClass("hidden")
 	$("#fase-tres").addClass("hidden")
@@ -198,10 +195,39 @@ $("#btn").on('click', function(e){
 	$(".footerGL").addClass("hidden")
 })
 
+
 $("#btnSubmitNuevoGrupo").on("click", function(e){
 	e.preventDefault();
 
 	$("#grupo").removeClass("hidden");
 	$("#jugador").addClass("hidden");
+	$('.btn-play').show();
+
 })
 
+
+$('.btn-play').hide();
+
+	$('.btn-play').click(function(){
+		$("#fase-cuatro").hide();
+		$("#fase-cinco").removeClass("hidden");
+
+	});
+
+	$('#btn-play').click(function(){
+		console.log("***********")
+		$("#fase-cinco").hide();
+		$("#fase-seis").removeClass("hidden");
+
+	})
+
+
+	$('#btn-play2').on('click',function(){
+		$("#fase-seis").hide();
+		$("#fase-siete").removeClass("hidden");
+	})
+
+$('#btn-play3').on('click',function(){
+		$("#fase-siete").addClass("hidden");
+		$("#fase-ocho").removeClass('hidden');
+	})

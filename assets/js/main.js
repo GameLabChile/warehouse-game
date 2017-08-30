@@ -1,3 +1,22 @@
+$(document).ready(function(){
+    setTimeout(function(){
+    	$(".globo").fadeIn(500);
+    },1000);
+
+     setTimeout(function(){
+    	$(".globo2").fadeIn(1000);
+    },2000);
+
+      setTimeout(function(){
+    	$(".globo3").fadeIn(1500);
+    },3000);
+
+       setTimeout(function(){
+    	$(".all-maribel").fadeIn(2000);
+    },4000);
+
+});
+
 $(document).ready(function() {
 	$('.dos').hide();
 	$('.tres').hide();
@@ -99,3 +118,37 @@ $(document).ready(function() {
 
 });
 	
+
+$('#comenzar').on('click', function(e){
+	
+	$("#fase-dos").removeClass("hidden")
+	$("#foto").addClass("hidden")
+});
+
+$('#login-button').on('click', function(e){
+	e.preventDefault();
+
+	$("#fase-tres").removeClass("hidden")
+	$("#formLogin").addClass("hidden")
+	$(".footerGL").addClass("hidden")
+});
+
+$('#btnJoin').on('click', function(e){
+	e.preventDefault();
+
+	$("#fase-cuatro").removeClass("hidden")
+	$("#fase-tres").addClass("hidden")
+	$("#formLogin").addClass("hidden")
+	$(".footerGL").addClass("hidden")
+});
+$("#btn").on('click', function(e){
+	e.preventDefault();
+
+	$("#fase-cinco").removeClass("hidden")
+	$("#fase-cuatro").addClass("hidden")
+	$("#fase-tres").addClass("hidden")
+	$("#formLogin").addClass("hidden")
+	$(".footerGL").addClass("hidden")
+})
+
+

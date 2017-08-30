@@ -1,3 +1,136 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+#reunion{
+	background-image:url(../img/reunion/reunionpizarra.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    width:100%;
+    height:120vh;
+}
+
+ .globo{
+ 	display:none;
+ 	background-image:url(../img/reunion/globo_texto.png);
+    width: 205px;
+    height: 134px;
+    background-size: 100%;
+    position: absolute;
+    top: 38px;
+    left: 376px;
+  }
+
+.globo2{
+ 	display:none;
+ 	background-image:url(../img/reunion/globo_texto.png);
+    width: 205px;
+    height: 134px;
+    background-size: 100%;
+    position: relative;
+    top: 80px;
+    left: 615px;
+}
+
+.globo3{
+ 	display:none;
+ 	background-image:url(../img/reunion/globo_texto.png);
+    width: 205px;
+    height: 134px;
+    background-size: 100%;
+    position: relative;
+    top: 100px;
+    left: 314px;
+}
+
+ .texto{
+    p{
+       margin-top:20px;
+    }
+}
+
+    .dialog{
+    	img{
+    		width: 100%;
+            margin-top: 315px;
+    	}
+    }
+
+   .button{
+   	img{
+    width: 30%;
+    margin-left: 763px;
+    margin-top: -55px;
+   	}
+
+   	.texto2{
+   		p{
+    margin-top: -85px;
+    padding-left: 884px;
+    font-size: 40px; 
+}
+   	}
+
+   	.texto{
+   		p{
+    margin-top: -165px;
+    margin-left: 30px;
+    font-size:20px;
+   		}
+   	}
+   }
+
+.textbutton{
+	position: absolute;
+    left: 78%;
+    margin-top: -29px;
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#uno{
+    font-size:17px;
+    /* horizontal center */
+    text-align: center;
+    /* vertival center */
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    /* padding */
+    width: 100%;
+    padding: 10%;
+
+
+}
+
+#dos {
+    font-size:17px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 10%;
+    text-align: center;
+}
+
+#tres {
+    font-size:17px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 10%;
+    text-align: center;
+}
+
+
+.all-maribel{
+	display:none;
+}
+
 body{
 	margin: 0;
 	padding: 0;
@@ -246,7 +379,71 @@ body{
     -o-transition-timing-function: linear;
     transition-timing-function: linear;
     position: absolute;
+<<<<<<< HEAD
     top: 62%;
     left: 78.5%;
     transform-origin: top left;
 }
+=======
+    top: 25%;
+    left: 66%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/* Index */
+.logo {
+	background-image: url(../img/logo/splash_001.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+
+	.btn-logo {
+		margin-top: 50%;
+		margin-left: 80%;
+	}
+
+	.siguiente {
+		@include btnSiguiente();
+		font-size: 1.2em;
+		left: 86%;
+		top: 92.5%;
+	}
+}
+
+
+/* Intro */
+.intro {
+	background-image: url(../img/intro/003.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 133vh;
+	max-width: 100%;
+	.dialogo {
+	    margin-top: 50%;
+	    #contenido {
+			margin: -20% 5% 3%;
+			font-weight: bold;
+			color: whitesmoke;
+			font-size: 1.8em;
+	    }
+	    .btn-intro{
+			margin-left: 36%;
+			margin-top: -9%;
+	    }
+
+		.siguiente {
+			@include btnSiguiente();
+			font-size: 2em;
+			left: 84.5%;
+			top: 145.5%;
+		}
+	}
+}
+
+
+>>>>>>> 8545dc4a16681802c1051fc6cc53d5a86f9c2ab7

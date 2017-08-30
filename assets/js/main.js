@@ -1,3 +1,117 @@
+$(document).ready(function() {
+	$('.dos').hide();
+	$('.tres').hide();
+	$('.cuatro').hide();
+	$('.cinco').hide();
+	$('.seis').hide();
+	$('.siete').hide();
+	$('.uno').click(function(e) {
+		$(this).removeClass('pulse');	
+		$('#linea1').css({
+			width: '300px',
+			background: '#428bca',
+			transform: 'rotate(20deg)'
+		});
+		$('#linea1').css('margin-top','7%');
+		$('.dos').show();
+	});
+
+	$('.dos').click(function(e) {
+		$(this).removeClass('pulse');
+		$('#linea2').css({
+			width: '270px',
+			background: '#428bca',
+			transform: 'rotate(-35deg)'
+		});
+		$('#linea3').css({
+			width: '400px',
+			background: '#428bca',
+			transform: 'rotate(-10deg)'
+		});
+		$('#linea1').css('height','5px');
+		$('#linea2').css('margin-top','-3%');
+		$('#linea2').css('margin-left','-1%');
+		$('#linea3').css('margin-top','1%');
+		$('#linea3').css('margin-left','2%');
+		$('.tres').show();
+		$('.cuatro').show();
+		$('.cinco').show();
+	});
+
+	$('.tres').click(function(e) {
+		$(this).removeClass('pulse');
+		$('#linea4').css({
+			width: '80px',
+			background: '#428bca',
+			transform: 'rotate(150deg)'
+		});
+		$('#linea4').css('margin-top','0%');
+		$('#linea4').css('margin-left','-7%');
+		$('#linea2').css('height','5px');
+		setTimeout(function() {
+	        $(".ruta-mn").fadeIn(1500);
+	    },2000);
+	    $('.seis').show();
+	});
+
+	$('.cuatro').click(function(e) {
+		$(this).removeClass('pulse');
+		$('#linea5').css({
+			width: '72px',
+			background: '#428bca',
+			transform: 'rotate(85deg)'
+		});
+		$('#linea5').css('margin-top','14%');
+		$('#linea5').css('margin-left','6.5%');
+		$('#linea3').css('height','5px');
+		setTimeout(function() {
+	        $(".ruta-mopp").fadeIn(1500);
+	    },2000);
+	    $('.seis').show();
+	});
+
+	$('.cinco').click(function(e) {
+		$(this).removeClass('pulse');
+		$('#linea6').css({
+			width: '72px',
+			background: '#428bca',
+			transform: 'rotate(85deg)'
+		});
+		$('#linea6').css('margin-top','17%');
+		$('#linea6').css('margin-left','9.5%');
+		setTimeout(function() {
+	        $(".ruta-xd").fadeIn(1500);
+	    },2000);
+	    $('.seis').show();
+	});
+
+	$('.seis').click(function(e) {
+		$(this).removeClass('pulse');
+		$('#linea6').css({
+			width: '72px',
+			background: '#428bca',
+			transform: 'rotate(85deg)'
+		});
+		$('#linea6').css('margin-top','17%');
+		$('#linea6').css('margin-left','9.5%');
+		setTimeout(function() {
+	        $(".ruta-ptl").fadeIn(500);
+	    },1000);
+	    $('.siete').show();
+	    $('#linea4').css('height','5px');
+	    $('#linea5').css('height','5px');
+	    $('#linea6').css('height','5px');
+	});
+
+	$('.siete').click(function(e) {
+		$(this).removeClass('pulse');
+		setTimeout(function() {
+	        $(".ruta-ds").fadeIn(500);
+	    },1000);
+	});
+
+});
+	
 
 $('#comenzar').on('click', function(e){
 	
@@ -30,169 +144,4 @@ $("#btn").on('click', function(e){
 	$("#formLogin").addClass("hidden")
 	$(".footerGL").addClass("hidden")
 })
-/*
-$(document).ready(function(){
-	$("#clicktext").click(function(){
-		$('#asd1').typeIt({
-			strings: 'Producto del temporal, la ',
-			speed: 60,
-			autoStart: true,
-			cursor: false,
-			lifeLike: true,
-			callback:	function() {$('#asd').typeIt({
-				startDelete: true,
-				strings: 'fabrica A no cuenta con suministro eléctrico. Turno matutino dirigirse a jefatura. Turno vespertino suspendido.',
-				speed: 10,
-				autoStart: true,
-				cursor: false,
-				breakLines: false,
-				deleteDelay: 200,
-				lifeLike: true,
-			});}
-		});
-		setTimeout(function(){
-			$('#filter-rol').addClass('pulse');
-		},4500);
-	});
-	$('.enter-button').on('click', function(e){
-		setTimeout(function(){
-			$('.container').animate({
-				bottom: ["50%", "swing"]
-			}, 1000, function(){
-				$('.container').animate({
-					top: ["0%", "swing"]
-				}, 1000, function(){
-					$('#create-message-pulse').addClass('pulse');
-				});
-			});
-		}, 1200);
-	});
-	$('#login-button').on('click', function(e){
-		$('#in-panel').animate(
-		{
-			right: ['100%', 'swing']
-		},
-		300,
-		function(){
-			$('#mail').typeIt({
-				strings: 'arctos@osa.com',
-				speed: 100,
-				autostart: true,
-				cursor: false
-			});
-			$('#pass').typeIt({
-				strings: '••••••••',
-				speed: 100,
-				autoStart: true,
-				startDelay: 2500,
-				cursor: false
-			});
-			setTimeout(function() 
-			{
-				$('.mail-form').fadeOut('slow','linear');
-				$('.rut-form').delay( 1000 ).fadeIn('fast','linear');
-				setTimeout(function()
-				{
-					$('#rut').typeIt({
-						strings: '19457653-4',
-						speed: 100,
-						autoStart: true,
-						startDelay: 1000,
-						cursor: false
 
-					});
-					$('#pass-rut').typeIt({
-						strings: '••••••••',
-						speed: 100,
-						autoStart: true,
-						startDelay: 3000,
-						cursor: false
-					});
-					setTimeout(function()
-					{
-						$('#get-in').addClass('pulse');
-					},
-					4000
-					);
-				}, 
-				1000
-				);
-			}, 
-			4000
-			);
-		}
-		);
-	});
-	$('#create-message').on('click', function(e) {
-		$('.container').prepend($('#message').html());
-		$('.bear-phone').addClass('vibration');
-		$('.eye').addClass('alert-eye');
-		setTimeout(function(){ 
-			$('.new-message-card:first-child').addClass('new-message-vib');
-			$('.new-message-card:not(:first-child)').removeClass('new-message-vib');
-			setTimeout(function(){
-				$('.bear-push-none').removeClass('bear-push-none').addClass('bear-push-initial');
-				setTimeout(function(){
-					$('.bear-push-initial').addClass('bear-push-none').removeClass('bear-push-initial');
-				}, 4000);
-			},500);
-		}, 500);
-		$('.pulse').removeClass('pulse');
-	});
-	$('#create-message-rounded').on('click', function(e) {
-		$('.bear-phone').removeClass('vibration');
-		$('.eye').removeClass('alert-eye');
-	});
-	$('#rol-filter-button').on('click', function(e){
-		$('#filter-rol').removeClass('pulse').addClass('height-35');
-		$('.modal-filter').animate( {
-			bottom: [ "0", "swing" ]
-		},
-		300,
-		function() {
-			console.log( "done! filter" );
-			console.log("done");
-			setTimeout(function(){
-				$('.check-select').addClass('pulse');
-			}, 1000);
-		}
-		).addClass('modal-display');
-		$('.cover-filter').fadeIn('fast','linear');
-		setTimeout(() => {
-			$('#test1').attr('checked','checked');
-			$('#test2').attr('checked','checked');
-			$('#test3').attr('checked','checked');
-		},500)
-	});
-	$('.btn-modal').on('click', function(e) {
-		$('.modal-filter').animate( {
-			bottom: [ "-100%", "swing" ]
-		},
-		900,
-		function() {
-			console.log( "done! filter" );
-		}
-		).removeClass('modal-display');
-		$('.cover-filter').delay(200).fadeOut('fast','linear');
-		$('#rol-picker-2').hide();
-		$('#rol-selected').show();
-		$('#rol-picker').show();
-		$('#before-filter').hide();
-		$('#after-filter').show();
-		$('#check-button').addClass('pulse');
-	});
-	$("#test6").change(function() {
-		if(this.checked) {
-			$('.check-select').removeClass('pulse');
-			$('.ok-select').addClass('pulse');
-		}
-	});
-	setTimeout(function () {
-		$('#login-button').trigger('mouseover');
-	}, 10);
-
-	setTimeout(function () {
-		$('#login-button').trigger('mouseout');
-	}, 1000);
-});
-*/

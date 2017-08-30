@@ -14,30 +14,35 @@
 
  .globo{
  	display:none;
-   img{
-   width: 18%;
-   margin-top: 0%;
-   margin-left: 372px;
-    }
+ 	background-image:url(../img/reunion/globo_texto.png);
+    width: 205px;
+    height: 134px;
+    background-size: 100%;
+    position: absolute;
+    top: 38px;
+    left: 376px;
   }
 
 .globo2{
-	display:none;
-	img{
-    width:18%;
-    width: 18%;
-    margin-left: 53%;
-    margin-top: -10%;
-	}
+ 	display:none;
+ 	background-image:url(../img/reunion/globo_texto.png);
+    width: 205px;
+    height: 134px;
+    background-size: 100%;
+    position: relative;
+    top: 80px;
+    left: 615px;
 }
 
 .globo3{
-	display:none;
-	img{
-		width:18%;
-		margin-left: 28%;
-        margin-top: 62px;
-	}
+ 	display:none;
+ 	background-image:url(../img/reunion/globo_texto.png);
+    width: 205px;
+    height: 134px;
+    background-size: 100%;
+    position: relative;
+    top: 100px;
+    left: 314px;
 }
 
  .texto{
@@ -49,7 +54,7 @@
     .dialog{
     	img{
     		width: 100%;
-            margin-top: 170px;
+            margin-top: 315px;
     	}
     }
 
@@ -86,28 +91,40 @@
     font-weight: bold;
 }
 
-#uno p{
-    margin-top: -9%;
-    position: absolute;
-    width: 15%;
-    margin-left: 34%;
+#uno{
     font-size:17px;
+    /* horizontal center */
+    text-align: center;
+    /* vertival center */
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    /* padding */
+    width: 100%;
+    padding: 10%;
+
+
 }
 
-#dos p{
-	position: absolute;
-    top: 641%;
-    left: 32%;
-    z-index: 1004;
-    font-size: 19px;
-    width:13%;
+#dos {
+    font-size:17px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 10%;
+    text-align: center;
 }
 
-#tres p{
-	position: relative;
-    top: -285px;
-    left: 58%;
-    font-size: 19px;
+#tres {
+    font-size:17px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 10%;
+    text-align: center;
 }
 
 

@@ -3,8 +3,10 @@
 	padding:0;
 }
 
+/* Reuniones */
+
 #reunion{
-	background-image:url(../img/reunion/reunionpizarra.png);
+	background-image:url(../img/reunion/salareunion.png);
     background-repeat: no-repeat;
     background-size:cover;
     width:100%;
@@ -44,9 +46,12 @@
     left: 314px;
 }
 
- .texto{
+.texto{
     p{
        margin-top:20px;
+       font-weight: bold;
+        color: whitesmoke;
+        font-size: 1.8em;
     }
 }
 
@@ -59,27 +64,27 @@
 
    .button{
    	img{
-    width: 30%;
-    margin-left: 763px;
-    margin-top: -55px;
+        width: 30%;
+        margin-left: 763px;
+        margin-top: -55px;
    	}
 
    	.texto2{
    		p{
-    margin-top: -85px;
-    padding-left: 884px;
-    font-size: 40px; 
-}
+            margin-top: -85px;
+            padding-left: 884px;
+            font-size: 40px; 
+        }
    	}
 
    	.texto{
    		p{
-    margin-top: -165px;
-    margin-left: 30px;
-    font-size:20px;
+            margin-top: -165px;
+            margin-left: 30px;
+            font-size:20px;
    		}
    	}
-   }
+}
 
 .textbutton{
 	position: absolute;
@@ -131,90 +136,77 @@
 	display:none;
 }
 
-body{
-	margin: 0;
-	padding: 0;
-}
+
+/* Interfaz */
+
 .planta{
 	height: 100vh;
 }
 .planta img{
 	width: 100%;
-	height: 110vh;
+	height: 100vh;
 	margin-top: 0%;
 }
 
 .acciones{
     margin-top: -36%;
 }
+
 .uno{
-	position: absolute;
     top: 33%;
     left: 20%;
     background-color: #b24a62;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    @include btnInterfaz();
 }
 
 .dos{
-	position: absolute;
     top: 45%;
     left: 40%;
     background-color: yellow;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    @include btnInterfaz();
 }
 
 .tres{
-	position: absolute;
     top: 20%;
     left: 58%;
     background-color: green;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    @include btnInterfaz();
 }
 
 .cuatro{
-	position: absolute;
     top: 35%;
     left: 73%;
     background-color: lightblue;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    font-size: 11px;
+    @include btnInterfaz();
 }
 
 .cinco{
-	position: absolute;
     top: 60%;
     left: 78%;
     background-color: orange;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    @include btnInterfaz();
 }
 
 .seis{
-	position: absolute;
     top: 65%;
     left: 54%;
     background-color: blue;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    @include btnInterfaz();
 }
 
 .siete{
-	position: absolute;
     top: 78%;
     left: 42%;
     background-color: purple;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    @include btnInterfaz();
 }
 
 .pulse {
@@ -243,24 +235,24 @@ body{
 }
 
  .mnVerde .ruta-mn{
- 	width: 39%;
+ 	width: 35%;
     display: none;
-    margin-top: -13.5%;
-    margin-left: 56%;
+    margin-top: -7.5%;
+    margin-left: 58%;
  }
 
  .moppCeleste .ruta-mopp{
- 	width: 39%;
+ 	width: 37%;
     display: none;
-    margin-top: -10.8%;
-    margin-left: 57%;
+    margin-top: -9.8%;
+    margin-left: 58%;
  }
 
   .xdNaranjo .ruta-xd{
- 	width: 18.5%;
+ 	width: 17.5%;
     display: none;
-    margin-top: -7.5%;
-    margin-left: 59%;
+    margin-top: -7%;
+    margin-left: 60%;
  }
 
  .ptlAzul .ruta-ptl{
@@ -271,24 +263,17 @@ body{
  }
 
  .dsLila .ruta-ds{
- 	width: 18.2%;
+ 	width: 16.2%;
     display: none;
-    margin-top: 6.5%;;
-    margin-left: 11%;
+    margin-top: 3.9%;
+    margin-left: 13%;
  }
 
  #linea1 {
     width: 0;
     height: 10px;
-    background: #f92672;
-    -webkit-transition: width 1s, background 1s;
-    -moz-transition: width 1s, background 1s;
-    -o-transition: width 1s, background 1s;
-    transition: width 1s, background 1s;
-    -webkit-transition-timing-function: linear;
-    -moz-transition-timing-function: linear;
-    -o-transition-timing-function: linear;
-    transition-timing-function: linear;
+    background: #296317;
+    @include lineaTransition();
     position: absolute;
     top: 34%;
     left: 20%;
@@ -298,15 +283,8 @@ body{
 #linea2 {
     width: 0;
     height: 10px;
-    background: #f92672;
-    -webkit-transition: width 1s, background 1s;
-    -moz-transition: width 1s, background 1s;
-    -o-transition: width 1s, background 1s;
-    transition: width 1s, background 1s;
-    -webkit-transition-timing-function: linear;
-    -moz-transition-timing-function: linear;
-    -o-transition-timing-function: linear;
-    transition-timing-function: linear;
+    background: #296317;
+    @include lineaTransition();
     position: absolute;
     top: 47%;
     left: 41%;
@@ -315,15 +293,8 @@ body{
 #linea3 {
     width: 0;
     height: 10px;
-    background: #f92672;
-    -webkit-transition: width 1s, background 1s;
-    -moz-transition: width 1s, background 1s;
-    -o-transition: width 1s, background 1s;
-    transition: width 1s, background 1s;
-    -webkit-transition-timing-function: linear;
-    -moz-transition-timing-function: linear;
-    -o-transition-timing-function: linear;
-    transition-timing-function: linear;
+    background: #296317;
+    @include lineaTransition();
     position: absolute;
     top: 47%;
     left: 41%;
@@ -333,15 +304,8 @@ body{
 #linea4 {
     width: 0;
     height: 10px;
-    background: #f92672;
-    -webkit-transition: width 1s, background 1s;
-    -moz-transition: width 1s, background 1s;
-    -o-transition: width 1s, background 1s;
-    transition: width 1s, background 1s;
-    -webkit-transition-timing-function: linear;
-    -moz-transition-timing-function: linear;
-    -o-transition-timing-function: linear;
-    transition-timing-function: linear;
+    background: #296317;
+    @include lineaTransition();
     position: absolute;
     top: 20%;
     left: 60%;
@@ -351,15 +315,8 @@ body{
 #linea5 {
     width: 0;
     height: 10px;
-    background: #f92672;
-    -webkit-transition: width 1s, background 1s;
-    -moz-transition: width 1s, background 1s;
-    -o-transition: width 1s, background 1s;
-    transition: width 1s, background 1s;
-    -webkit-transition-timing-function: linear;
-    -moz-transition-timing-function: linear;
-    -o-transition-timing-function: linear;
-    transition-timing-function: linear;
+    background: #296317;
+    @include lineaTransition();
     position: absolute;
     top: 38%;
     left: 74.5%;
@@ -369,25 +326,32 @@ body{
 #linea6 {
     width: 0;
     height: 10px;
-    background: #f92672;
-    -webkit-transition: width 1s, background 1s;
-    -moz-transition: width 1s, background 1s;
-    -o-transition: width 1s, background 1s;
-    transition: width 1s, background 1s;
-    -webkit-transition-timing-function: linear;
-    -moz-transition-timing-function: linear;
-    -o-transition-timing-function: linear;
-    transition-timing-function: linear;
+    background: #296317;
+    @include lineaTransition();
     position: absolute;
-<<<<<<< HEAD
     top: 62%;
     left: 78.5%;
     transform-origin: top left;
 }
-=======
-    top: 25%;
-    left: 66%;
+
+.planta {
+   .boton {
+        .btn-planta {
+            width: 16%;
+            height: auto;
+            margin-top: 25%;
+            margin-left: 33%;
+        }
+        .siguiente {
+            position: absolute;
+            margin-left: -10%;
+            margin-top: 28%;
+            color: whitesmoke;
+            font-weight: bold;
+        }
+    } 
 }
+
 
 body {
 	margin: 0;
@@ -445,5 +409,3 @@ body {
 	}
 }
 
-
->>>>>>> 8545dc4a16681802c1051fc6cc53d5a86f9c2ab7

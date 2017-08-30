@@ -24,11 +24,13 @@ $(document).ready(function() {
 	$('.cinco').hide();
 	$('.seis').hide();
 	$('.siete').hide();
+	$('.btn-planta').hide();
+	$('.siguiente').hide();
 	$('.uno').click(function(e) {
 		$(this).removeClass('pulse');	
 		$('#linea1').css({
 			width: '280px',
-			background: '#428bca',
+			background: '#c50000',
 			transform: 'rotate(16deg)'
 		});
 		$('.dos').show();
@@ -38,12 +40,12 @@ $(document).ready(function() {
 		$(this).removeClass('pulse');
 		$('#linea2').css({
 			width: '270px',
-			background: '#428bca',
+			background: '#c50000',
 			transform: 'rotate(-35deg)'
 		});
 		$('#linea3').css({
 			width: '400px',
-			background: '#428bca',
+			background: '#c50000',
 			transform: 'rotate(-10deg)'
 		});
 		$('#linea1').css('height','5px');
@@ -56,7 +58,7 @@ $(document).ready(function() {
 		$(this).removeClass('pulse');
 		$('#linea4').css({
 			width: '65px',
-			background: '#428bca',
+			background: '#c50000',
 			transform: 'rotate(-30deg)'
 		});
 		$('#linea2').css('height','5px');
@@ -70,7 +72,7 @@ $(document).ready(function() {
 		$(this).removeClass('pulse');
 		$('#linea5').css({
 			width: '45px',
-			background: '#428bca',
+			background: '#c50000',
 			transform: 'rotate(75deg)'
 		});
 		$('#linea3').css('height','5px');
@@ -84,7 +86,7 @@ $(document).ready(function() {
 		$(this).removeClass('pulse');
 		$('#linea6').css({
 			width: '55px',
-			background: '#428bca',
+			background: '#c50000',
 			transform: 'rotate(-118deg)'
 		});
 		setTimeout(function() {
@@ -97,7 +99,7 @@ $(document).ready(function() {
 		$(this).removeClass('pulse');
 		$('#linea6').css({
 			width: '72px',
-			background: '#428bca',
+			background: '#c50000',
 			transform: 'rotate(85deg)'
 		});
 		setTimeout(function() {
@@ -106,7 +108,6 @@ $(document).ready(function() {
 	    $('.siete').show();
 	    $('#linea4').css('height','5px');
 	    $('#linea5').css('height','5px');
-	    $('#linea6').css('height','5px');
 	});
 
 	$('.siete').click(function(e) {
@@ -114,6 +115,8 @@ $(document).ready(function() {
 		setTimeout(function() {
 	        $(".ruta-ds").fadeIn(500);
 	    },1000);
+	    $('.btn-planta').show();
+		$('.siguiente').show();
 	});
 
 });
@@ -150,5 +153,4 @@ $("#btn").on('click', function(e){
 	$("#formLogin").addClass("hidden")
 	$(".footerGL").addClass("hidden")
 })
-
 

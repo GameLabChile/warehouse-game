@@ -8,11 +8,10 @@ $(document).ready(function() {
 	$('.uno').click(function(e) {
 		$(this).removeClass('pulse');	
 		$('#linea1').css({
-			width: '300px',
+			width: '280px',
 			background: '#428bca',
-			transform: 'rotate(20deg)'
+			transform: 'rotate(16deg)'
 		});
-		$('#linea1').css('margin-top','7%');
 		$('.dos').show();
 	});
 
@@ -29,10 +28,6 @@ $(document).ready(function() {
 			transform: 'rotate(-10deg)'
 		});
 		$('#linea1').css('height','5px');
-		$('#linea2').css('margin-top','-3%');
-		$('#linea2').css('margin-left','-1%');
-		$('#linea3').css('margin-top','1%');
-		$('#linea3').css('margin-left','2%');
 		$('.tres').show();
 		$('.cuatro').show();
 		$('.cinco').show();
@@ -41,12 +36,10 @@ $(document).ready(function() {
 	$('.tres').click(function(e) {
 		$(this).removeClass('pulse');
 		$('#linea4').css({
-			width: '80px',
+			width: '65px',
 			background: '#428bca',
-			transform: 'rotate(150deg)'
+			transform: 'rotate(-30deg)'
 		});
-		$('#linea4').css('margin-top','0%');
-		$('#linea4').css('margin-left','-7%');
 		$('#linea2').css('height','5px');
 		setTimeout(function() {
 	        $(".ruta-mn").fadeIn(1500);
@@ -57,12 +50,10 @@ $(document).ready(function() {
 	$('.cuatro').click(function(e) {
 		$(this).removeClass('pulse');
 		$('#linea5').css({
-			width: '72px',
+			width: '45px',
 			background: '#428bca',
-			transform: 'rotate(85deg)'
+			transform: 'rotate(75deg)'
 		});
-		$('#linea5').css('margin-top','14%');
-		$('#linea5').css('margin-left','6.5%');
 		$('#linea3').css('height','5px');
 		setTimeout(function() {
 	        $(".ruta-mopp").fadeIn(1500);
@@ -73,12 +64,10 @@ $(document).ready(function() {
 	$('.cinco').click(function(e) {
 		$(this).removeClass('pulse');
 		$('#linea6').css({
-			width: '72px',
+			width: '55px',
 			background: '#428bca',
-			transform: 'rotate(85deg)'
+			transform: 'rotate(-118deg)'
 		});
-		$('#linea6').css('margin-top','17%');
-		$('#linea6').css('margin-left','9.5%');
 		setTimeout(function() {
 	        $(".ruta-xd").fadeIn(1500);
 	    },2000);
@@ -92,8 +81,6 @@ $(document).ready(function() {
 			background: '#428bca',
 			transform: 'rotate(85deg)'
 		});
-		$('#linea6').css('margin-top','17%');
-		$('#linea6').css('margin-left','9.5%');
 		setTimeout(function() {
 	        $(".ruta-ptl").fadeIn(500);
 	    },1000);

@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	// index
-	$(".btn-logo").on("click", function() {
+	$("#btn-reu").on("click", function() {
 		location = "intro.html"
 	});
 

@@ -5817,10 +5817,45 @@ button.close {
 /* Reuniones */
 #reunion {
   background-image: url(../img/reunion/salareunion.png);
+  background-size: 100%;
   background-repeat: no-repeat;
-  background-size: cover;
   width: 100%;
-  height: 120vh; }
+  height: 100%; }
+  #reunion .dialogo {
+    background-image: url(../img/intro/bkg-dialogos.png);
+    width: 1182px;
+    height: 185px;
+    margin: auto;
+    position: relative;
+    top: 533px; }
+    #reunion .dialogo #contenido {
+      font-weight: bold;
+      color: whitesmoke;
+      font-size: 1.8em;
+      width: 100%;
+      height: 100%;
+      padding: 39px; }
+    #reunion .dialogo .btn-intro {
+      background: url(../img/intro/boton.png);
+      width: 382px;
+      height: 152px;
+      padding: 71px;
+      text-align: center;
+      font-size: 2em;
+      color: whitesmoke;
+      font-weight: bold;
+      position: absolute;
+      cursor: pointer;
+      left: 67.5%;
+      top: 43.5%; }
+    #reunion .dialogo .siguiente {
+      color: whitesmoke;
+      font-weight: bold;
+      position: absolute;
+      cursor: pointer;
+      font-size: 2em;
+      left: 67.5%;
+      top: 43.5%; }
 
 .globo {
   display: none;
@@ -5829,8 +5864,8 @@ button.close {
   height: 134px;
   background-size: 100%;
   position: absolute;
-  top: 38px;
-  left: 376px; }
+  top: 11px;
+  left: 431px; }
 
 .globo2 {
   display: none;
@@ -5838,9 +5873,9 @@ button.close {
   width: 205px;
   height: 134px;
   background-size: 100%;
-  position: relative;
-  top: 80px;
-  left: 615px; }
+  position: absolute;
+  top: 60px;
+  left: 681px; }
 
 .globo3 {
   display: none;
@@ -5848,9 +5883,9 @@ button.close {
   width: 205px;
   height: 134px;
   background-size: 100%;
-  position: relative;
-  top: 100px;
-  left: 314px; }
+  position: absolute;
+  top: 254px;
+  left: 382px; }
 
 .texto p {
   margin-top: 20px;
@@ -6213,6 +6248,7 @@ body {
     padding: 16px;
     color: white;
     font-size: 20px;
+    position: absolute;
     top: 82%;
     left: 74%; }
   .logo .siguiente {
@@ -6250,7 +6286,14 @@ body {
       width: 382px;
       height: 152px;
       padding: 71px;
-      text-align: center; }
+      text-align: center;
+      top: 82%;
+      left: 74%;
+      font-size: 2em;
+      color: whitesmoke;
+      font-weight: bold;
+      position: absolute;
+      cursor: pointer; }
     .intro .dialogo .siguiente {
       color: whitesmoke;
       font-weight: bold;
